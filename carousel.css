@@ -1,5 +1,18 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A6192E;
+}
+
+
 /* Padding below the footer and lighter body text */
 
 body {
@@ -7,6 +20,11 @@ body {
   color: #5a5a5a;
 }
 
+footer {
+  color: white;
+  background-color: #54585A;
+  padding-top: 50px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -110,7 +128,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 700px;
+  height: 100%;
   margin-bottom: 60px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -118,13 +136,9 @@ body {
 .carousel-caption {
   z-index: 10;
 }
-.carousel-caption h1
-{
-  color: #A6192E;
-}
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 700px;
+  height: 100%;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -132,12 +146,39 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 700px;
+  height: 100%;
 }
 
+/*  section
+-------------------------------------------------- */
+section {
+  padding: 100px 0;
+}
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
 
 /* PORTFOLIO BOX
 -------------------------------------------------- */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+
+#portfolio .portfolio-item {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
 .hovereffect {
   width: 100%;
   height: 100%;
