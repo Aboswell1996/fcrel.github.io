@@ -16,7 +16,7 @@ h6 {
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  /*padding-bottom: 40px;*/
   color: #5a5a5a;
 }
 
@@ -118,8 +118,10 @@ footer {
         height:auto;
         padding: 0;
         /*border-bottom: 1px solid rgba(255,255,255,.3);*/
-        background: #54585A;
+        background-color: #54585A;
     }
+
+
 }
 
 
@@ -157,7 +159,20 @@ section {
 }
 section h2 {
   margin: 0;
+  padding-bottom: 20px;
   font-size: 3em;
+}
+
+/* jumbotron
+-------------------------------------------------- */
+.jumbotron {
+  background: url(img/nserc_055.jpg)no-repeat center center scroll;
+  background-size: cover;
+  height: 40%;
+}
+.jumbotron h2,
+.jumbotron p {
+  vertical-align: bottom;
 }
 
 /* PORTFOLIO BOX
@@ -174,9 +189,15 @@ section h2 {
   margin: 0 auto;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+  .hovereffect img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 }
 
