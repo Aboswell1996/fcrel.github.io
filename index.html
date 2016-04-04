@@ -38,7 +38,7 @@ Version   : 1.0
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
 
   <!-- NAVBAR
@@ -68,7 +68,7 @@ Version   : 1.0
                           <a href="research.html">Research</a>
                       </li>
                       <li>
-                          <a href="#Publication">Publication</a>
+                          <a href="publication.html">Publications</a>
                       </li>
                       <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
@@ -85,7 +85,7 @@ Version   : 1.0
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="#">Director</a></li>
+                          <li><a href="director.html">Director</a></li>
                           <li><a href="#">Current Members</a></li>
                           <li><a href="#">Past Members</a></li>
                         </ul>
@@ -159,7 +159,8 @@ Version   : 1.0
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2>Research Interest</h2>
+              <h2 class="section-heading">Research Interest</h2>
+              <hr class="primary">
             </div>
           </div>
 
@@ -170,7 +171,7 @@ Version   : 1.0
               <div class="overlay">
                 <h2>PEM</h2>
                 <p>
-                  <a class="info" href="#">link here</a>
+                  <a class="info" href="research.html#PEM">link here</a>
                 </p>
               </div>
             </div>
@@ -192,7 +193,7 @@ Version   : 1.0
               <div class="overlay">
                 <h2>Microfluidics</h2>
                 <p>
-                  <a class="info" href="#">Read More</a>
+                  <a class="info" href="research.html#Microfluidics">Read More</a>
                 </p>
               </div>
             </div>
@@ -231,15 +232,86 @@ Version   : 1.0
             </div>
           </div> <!-- col-lg-4 col-sm-6-->
         </div> <!-- row -->
-
       </div>
     </section>
 
+    <section class="bg-primary" id="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section-heading-light"> News </h2>
+            <hr class="light">
+            <p class="text-faded"> See the latest updates and upgrades at FCReL! </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on September 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted on September 18, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Science has not yet mastered prophecy
+                        </h2>
+                        <h3 class="post-subtitle">
+                            We predict too much for the next year and yet far too little for the next ten.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on August 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on July 8, 2014</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- FOOTER -->
-    <footer>
+    <div class="footer">
       <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2016 SFU Fuel Cell Research Lab. <!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> --> </p>
-    </footer>
+      <p>&copy; 2016 SFU Fuel Cell Research Lab <!-- &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> --> </p>
+    </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">

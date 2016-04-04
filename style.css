@@ -12,18 +12,42 @@ h6 {
   color: #A6192E;
 }
 
+hr.primary {
+  border-color: #A6192E;
+  border-width: 3px;
+  max-width: 80px;
+}
+
+hr.light{
+  border-color: #fff;
+  border-width: 3px;
+  max-width: 80px;
+}
+
+.bg-primary {
+  background-color: #A6192E;
+}
+
+
 
 /* Padding below the footer and lighter body text */
 
 body {
-  /*padding-bottom: 40px;*/
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
   color: #5a5a5a;
 }
 
-footer {
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   color: white;
   background-color: #54585A;
-  padding-top: 50px;
+
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -121,7 +145,6 @@ footer {
         background-color: #54585A;
     }
 
-
 }
 
 
@@ -155,25 +178,80 @@ footer {
 /*  section
 -------------------------------------------------- */
 section {
-  padding: 100px 0;
-}
-section h2 {
-  margin: 0;
-  padding-bottom: 20px;
-  font-size: 3em;
+  padding: 50px 0;
 }
 
-/* jumbotron
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading-light{
+  color: #fff;
+}
+
+.content-section-a {
+    padding: 50px 0;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.post-title{
+  text-transform: none;
+  font-size:30px;
+  margin-top:30px;
+  margin-bottom:10px
+}
+
+.post-subtitle {
+  color: #54585A;
+  font-size: 20px;
+  text-transform: none;
+}
+
+
+/* Banner
 -------------------------------------------------- */
-.jumbotron {
-  background: url(img/nserc_055.jpg)no-repeat center center scroll;
-  background-size: cover;
-  height: 40%;
+.bannerR {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
 }
-.jumbotron h2,
-.jumbotron p {
-  vertical-align: bottom;
+
+.bannerP {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(img/pub_banner.jpg) no-repeat center center;
+    background-size: cover;
 }
+
+.bannerD {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(img/team-banner.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.bannerR h2, .bannerP h2, .bannerD h2{
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+
 
 /* PORTFOLIO BOX
 -------------------------------------------------- */
@@ -283,22 +361,142 @@ section h2 {
   transform: translate3d(0,0,0);
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* Panel Default
+------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
+.panel-default > .panel-heading {
+  background-color: #54585A;
+  border-color: #fff;
+}
+
+.with-nav-tabs.panel-default{
+    margin: 70px;
+}
+
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #fff;
+}
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+  color: #fff;
+	background-color: #A6192E;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+	color: #fff;
+	background-color: #A6192E;
+	border-color: #A6192E;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #54585A;
+    border-color: #A6192E;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #fff;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #A6192E;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #000;
+    background-color: #555;
+}
+
+
+/* User Details
+--------------------------------- */
+
+.user-details {
+  margin: 70px;
+  padding: 0;
+}
+
+.user-details .user-image {
+  position: static;
+  z-index: 1;
+  /*width: 100%;*/
   text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+
+.user-image img {
+  clear: both;
+  padding-top: 35px;
+  height: 50%;
+  position: relative;
 }
 
+.user-details .user-info-block {
+  width: 100%;
+  top: 55px;
+  background: rgb(255, 255, 255);
+  z-index: 0;
+  /*padding-top: 35px;*/
+}
+
+.user-info-block h3{
+  text-transform: none;
+}
+
+.user-info-block .user-heading {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+.user-info-block .navigation {
+  float: left;
+  width: 100%;
+  margin: 0 30px;
+  padding: 0;
+  list-style: none;
+  /*border-bottom: 1px solid #428BCA;
+  border-top: 1px solid #428BCA;*/
+}
+
+.navigation li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li a {
+  padding: 10px 20px;
+  color: #A6192E;
+  float: left;
+}
+
+.navigation li.active a {
+  background: #A6192E;
+  color: #fff;
+}
+
+.user-info-block .user-body {
+  float: left;
+  padding: 5%;
+  width: 100%;
+}
+
+.user-body .tab-content > div {
+  float: left;
+  width: 100%;
+}
+
+.user-body .tab-content h4 {
+  width: 100%;
+  margin: 10px 0;
+  color: #333;
+}
 
 /* Featurettes
 ------------------------- */
