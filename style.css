@@ -28,8 +28,6 @@ hr.light{
   background-color: #A6192E;
 }
 
-
-
 /* Padding below the footer and lighter body text */
 
 body {
@@ -64,12 +62,12 @@ body {
     font-weight: 700;
 }
 .navbar-brand {
-  height:70px;
+  height:60px;
   padding: 0px; /* firefox bug fix */
 }
 .navbar-brand>img {
   height: 100%;
-  padding: 15px; /* firefox bug fix */
+  padding: 10px; /* firefox bug fix */
   width: auto;
 }
 
@@ -98,8 +96,8 @@ body {
     transition: background .3s ease-in-out;
     padding-left: 7px;
     padding-right: 7px;
-    min-height: 70px;
-    line-height: 40px;
+    min-height: 40px;
+    line-height: 30px;
 }
 
 .navbar-custom .nav li a:hover {
@@ -178,12 +176,12 @@ body {
 /*  section
 -------------------------------------------------- */
 section {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .section-heading {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .section-heading-spacer {
