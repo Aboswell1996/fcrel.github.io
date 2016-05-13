@@ -27,3 +27,45 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
   }
 });
+
+// Google Maps
+function init_map() {
+		var var_location = new google.maps.LatLng(49.187611, -122.849624);
+
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 16
+        };
+
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+            map: var_map,
+			title:"SFU Surrey"});
+
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+
+		var_marker.setMap(var_map);
+}
+
+function sec_map() {
+		var var_location = new google.maps.LatLng(49.160740, -122.879977);
+
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 16
+        };
+
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+            map: var_map,
+			title:"Powertech Lab"});
+
+        var var_map = new google.maps.Map(document.getElementById("map-container2"),
+            var_mapoptions);
+
+		var_marker.setMap(var_map);
+}
+
+google.maps.event.addDomListener(window, 'load', init_map);
+google.maps.event.addDomListener(window, 'load', sec_map);
