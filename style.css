@@ -236,14 +236,14 @@ section {
 .bannerP {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(img/pub_banner.jpg) no-repeat center center;
+    background: url(img/pub_banner_BW.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .bannerD {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(img/team-banner.jpg) no-repeat center center;
+    background: url(img/team_photo2_grey.jpg) no-repeat center center;
     background-size: cover;
 }
 
