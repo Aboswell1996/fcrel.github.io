@@ -581,6 +581,15 @@ h2.news a:hover{
 	color: #fff !important;
 }
 
+/* Partners
+-------------------------------------------------- */
+
+.industry, .research {
+  margin: 0 0 70 70;
+}
+
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
