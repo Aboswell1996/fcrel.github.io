@@ -67,5 +67,25 @@ function sec_map() {
 		var_marker.setMap(var_map);
 }
 
+function ballard_map() {
+		var var_location = new google.maps.LatLng(49.2048305,-123.0244042);
+
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 16
+        };
+
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+            map: var_map,
+			title:"Ballard Power Systems"});
+
+        var var_map = new google.maps.Map(document.getElementById("ballard"),
+            var_mapoptions);
+
+		var_marker.setMap(var_map);
+}
+
 google.maps.event.addDomListener(window, 'load', init_map);
 google.maps.event.addDomListener(window, 'load', sec_map);
+google.maps.event.addDomListener(window, 'load', ballard_map);
