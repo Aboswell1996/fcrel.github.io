@@ -28,6 +28,7 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
+
 // Google Maps
 function init_map() {
 		var var_location = new google.maps.LatLng(49.187611, -122.849624);

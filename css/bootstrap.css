@@ -3155,7 +3155,7 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-image: none;
+  background-color: none;
 }
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
@@ -4034,6 +4034,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a:hover {
   border-color: #eee #eee #ddd;
 }
+/*Look here!!!!!!!!!!!!!!*/
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {

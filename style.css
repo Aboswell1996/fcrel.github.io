@@ -38,7 +38,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: absolute;;
   right: 0;
   bottom: 0;
   left: 0;
@@ -110,10 +110,12 @@ body {
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
+    background-color: #A6192E;/*keeps nav bar tag highlighted when dropdown menu is clicked*/
 }
 
 .navbar-custom .nav li.active {
     outline: 0;
+    background-color: #A6192E;
 }
 
 .navbar-custom .nav li.active a {
@@ -169,46 +171,6 @@ body {
   background-color: #777;
 }
 
-.container-carousel{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    min-width: 50%;
-    height: 50%;
-
-}
-
-
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-transform: translate(-50%, -50%);
-  min-width: 50%;
-  height: 50%;
-}
-
-
-.carousel-indicators li { visibility: hidden; }
-
-.carousel-inner .item {
-    font-size:10px;
-    color:#0404B4
-    }
-
-.carousel-control {
-    z-index: 10;
-    top: 2%;
-    width: 30px; // no more gray thing
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-.carousel-control.left,
-.carousel-control.right { background: none }
-// change it according to your needs
-.carousel-control.left { left: -10px; }
-.carousel-control.right { right: -10px; }
 
 /*  section
 -------------------------------------------------- */
@@ -225,6 +187,11 @@ section {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+}
+.section-heading-spacer2 {
+    float: left;
+    width: 200px;
+    border-top: 3px;
 }
 
 .section-heading-light{
@@ -264,40 +231,47 @@ section {
 /* Banner
 -------------------------------------------------- */
 .bannerR {
-    padding: 100px 0;
     color: #f8f8f8;
     background: url(img/students_at_ballard2.png) no-repeat center center;
     background-size: cover;
 }
 
 .bannerP {
-    padding: 100px 0;
     color: #f8f8f8;
     background: url(img/pub_banner_BW.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .bannerD {
-    padding: 100px 0;
     color: #f8f8f8;
     background: url(img/team_photo2_grey.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .bannerC {
-    padding: 100px 0;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     color: #f8f8f8;
     background-color: #54585A;
+}
+
+.bannerI {
+    /*margin-bottom: 50px;*/
+    color: #f8f8f8;
+    background: url(img/team.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .bannerR h2, .bannerP h2, .bannerD h2, .bannerC h2{
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
+    padding: 75px 0;
 }
 
-
+html {
+  overflow-y: scroll;
+}
+/*prevents the scroll wheel on the right from adjusting the navbar*/
 
 /* PORTFOLIO BOX
 -------------------------------------------------- */
@@ -493,7 +467,7 @@ section {
 .user-info-block .user-heading {
   width: 100%;
   text-align: center;
-  margin: 10px 0 0;
+   margin: 10px 0 0;
 }
 
 .user-info-block .navigation {
@@ -666,3 +640,5 @@ h2.news a:hover{
       height: 650px
     }
 }
+
+.topic {font-size: 1.5em; text-decoration: none; }
