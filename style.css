@@ -35,6 +35,18 @@ body {
   padding-bottom: 6rem;
   min-height: 100%;
   color: #5a5a5a;
+  line-height: 2.5;
+}
+
+.cp-heading{
+color : #A6192E;
+}
+
+#index-redlink{
+font-size: 21px;
+color: #A6192E;
+margin: 0 0 0;
+margin-bottom: 0px;
 }
 
 .footer {
@@ -48,6 +60,7 @@ body {
 
 }
 
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 .navbar-custom {
@@ -57,6 +70,16 @@ body {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #54585A;
 }
+
+.dropdown-menu{
+background-color: #54585A; /* turns the background dark grey for the dropdown*/
+border: 0px;
+}
+
+.dropdown-menu > li > a {
+color : #fff;
+}
+
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
@@ -186,7 +209,7 @@ section {
 .section-heading-spacer {
     float: left;
     width: 200px;
-    border-top: 3px solid #e7e7e7;
+    border-top: 3px solid #e7e7e7; /*greyish*/
 }
 .section-heading-spacer2 {
     float: left;
@@ -201,15 +224,11 @@ section {
 
 .content-section-a {
     padding: 50px 0;
-}
-
-.content-section-a .info-img{
-    padding-top: 50px;
+    background-color: #f8f8f8;
 }
 
 .content-section-b {
     padding: 50px 0;
-    background-color: #e6e6e6;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
 }
@@ -272,6 +291,12 @@ html {
   overflow-y: scroll;
 }
 /*prevents the scroll wheel on the right from adjusting the navbar*/
+
+.nav-tabs {
+  border-bottom: 0px solid #ddd;
+}
+
+
 
 /* PORTFOLIO BOX
 -------------------------------------------------- */
@@ -385,8 +410,13 @@ html {
   border-color: #fff;
 }
 
+.panel{
+border: 0px;
+}
+
+/*Changes padding on sides of the nav bar for publications*/
 .with-nav-tabs.panel-default{
-    margin: 70px;
+    margin: 0px;
 }
 
 .with-nav-tabs.panel-default .nav-tabs > li > a,
@@ -417,6 +447,7 @@ html {
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
     color: #fff;
+    background-color: #5a5a5a;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
@@ -428,6 +459,7 @@ html {
     color: #000;
     background-color: #555;
 }
+
 
 
 /* User Details

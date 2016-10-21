@@ -28,6 +28,16 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
+//Test for publications insert
+$.ajax({
+        async:false,
+        url: 'test.txt',
+        dataType: 'text',
+        success: function(data)
+        {
+        $('element').append(data);
+            }
+        });
 
 // Google Maps
 function init_map() {
