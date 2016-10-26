@@ -79,7 +79,7 @@ function sec_map() {
 }
 
 function ballard_map() {
-		var var_location = new google.maps.LatLng(49.2048305,-123.0244042);
+		var var_location = new google.maps.LatLng(49.198026,-123.009905);
 
         var var_mapoptions = {
           center: var_location,
