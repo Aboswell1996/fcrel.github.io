@@ -60,7 +60,7 @@ function init_map() {
 }
 
 function sec_map() {
-		var var_location = new google.maps.LatLng(49.160277, -122.878565);
+		var var_location = new google.maps.LatLng(49.1604335, -122.8804053);
 
         var var_mapoptions = {
           center: var_location,
