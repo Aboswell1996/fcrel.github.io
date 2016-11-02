@@ -628,7 +628,8 @@ h2.news a:hover{
 -------------------------------------------------- */
 
 .industry, .research {
-  margin: 0 0 70 70;
+  mdisplay: inline-block;
+  padding: 10px 50px 10px 10px;
 }
 
 
