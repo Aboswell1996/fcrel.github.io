@@ -632,17 +632,26 @@ h2.news a:hover{
   padding: 10px 50px 10px 10px;
 }
 
-@media only screen and (max-device-width: 480px) {
-.mobile-only{
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+
+    .desktop-only {
+        display:none !important;
+    }
 }
 
 
-
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+    .mobile-only {
+        display:none !important;
+    }
 }
+
 
 
 /* RESPONSIVE CSS
