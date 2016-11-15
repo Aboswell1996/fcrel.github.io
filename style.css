@@ -246,6 +246,8 @@ section {
     text-transform: none;
 }
 
+.center { margin: 0 auto; width: 400px; }
+
 
 /* Banner
 -------------------------------------------------- */
@@ -257,7 +259,7 @@ section {
 
 .bannerP {
     color: #f8f8f8;
-    background: url(img/pub_banner_BW.jpg) no-repeat center center;
+    background: url(img/energy-meeting2.jpg) no-repeat center center;
     background-size: cover;
 }
 
