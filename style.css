@@ -445,11 +445,11 @@ border: 0px;
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
     background-color: #54585A;
-    border-color: #A6192E;
+    border-color: #A6192E; /* red*/
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
     color: #fff;
-    background-color: #5a5a5a;
+    background-color: #5a5a5a; /* grey */
 }
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
 .with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
@@ -461,7 +461,6 @@ border: 0px;
     color: #000;
     background-color: #555;
 }
-
 
 
 /* User Details
@@ -632,6 +631,11 @@ h2.news a:hover{
 .industry, .research {
   mdisplay: inline-block;
   padding: 10px 50px 10px 10px;
+}
+
+.partner-heading {
+ mdisplay: inline-block;
+ padding: 25px 25px 25px 25px;
 }
 
 @media (max-width: 991px) {

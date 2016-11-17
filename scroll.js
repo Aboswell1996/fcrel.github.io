@@ -45,7 +45,7 @@ function init_map() {
 
         var var_mapoptions = {
           center: var_location,
-          zoom: 16
+          zoom: 12
         };
 
 		var var_marker = new google.maps.Marker({
@@ -64,7 +64,7 @@ function sec_map() {
 
         var var_mapoptions = {
           center: var_location,
-          zoom: 16
+          zoom: 12
         };
 
 		var var_marker = new google.maps.Marker({
@@ -83,7 +83,7 @@ function ballard_map() {
 
         var var_mapoptions = {
           center: var_location,
-          zoom: 16
+          zoom: 12
         };
 
 		var var_marker = new google.maps.Marker({
