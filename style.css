@@ -74,11 +74,44 @@ margin-bottom: 0px;
 .dropdown-menu{
 background-color: #54585A; /* turns the background dark grey for the dropdown*/
 border: 0px;
+
+
 }
+
+.partner-image{
+text-align:center;
+height:150px;
+
+}
+
+.max-width{
+width: inherit;
+}
+
 
 .dropdown-menu > li > a {
 color : #fff;
 }
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      height : 50%;
+      margin: auto;
+  }
+
+  .peopleCarouselImg img {
+    width: auto;
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .peopleCarouselImg-2 img {
+    width: 200px;
+    height: 300px;
+    max-height: 300px;
+  }
+
+
 
 
 .navbar-custom .navbar-brand {
@@ -104,6 +137,7 @@ color : #fff;
     color: #fff;
 }
 
+
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -123,10 +157,28 @@ color : #fff;
     line-height: 30px;
 }
 
+/* has to be here...*/
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: rgba(255,255,255,.8);
     background-color: #A6192E;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu { /*makes the drop down menu show when hovered*/
+    display: block;
+
 }
 
 .navbar-custom .nav li a:focus,
@@ -146,11 +198,11 @@ color : #fff;
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #A6192E;
 }
 
 .fa-bars {
-  color: #A6192E
+  color: #A6192E;
 }
 
 @media(min-width:992px) {
@@ -180,8 +232,7 @@ color : #fff;
 
 /* Carousel base class */
 .carousel {
-  height: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -190,8 +241,21 @@ color : #fff;
 }
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 100%;
-  background-color: #777;
+  background-color: none;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 1000 !important;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-background{
+
+
 }
 
 
@@ -253,7 +317,7 @@ section {
 -------------------------------------------------- */
 .bannerR {
     color: #f8f8f8;
-    background: url(img/team_photo2_grey.jpg) no-repeat center center;
+    background: url(img/background_top.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -265,7 +329,7 @@ section {
 
 .bannerD {
     color: #f8f8f8;
-    background: url(img/team_photo2_grey.jpg) no-repeat center center;
+    background: url(img/background_top.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -462,6 +526,11 @@ border: 0px;
     background-color: #555;
 }
 
+.navbar-right ul li:hover > a {
+
+  background-color: #A6192E;
+}
+
 
 /* User Details
 --------------------------------- */
@@ -545,6 +614,17 @@ border: 0px;
   width: 100%;
   margin: 10px 0;
   color: #333;
+}
+
+.grey-background{
+  padding: 25px 0;
+
+  display: inline-block;
+}
+
+.float-right{
+
+  float : right;
 }
 
 /* Members
