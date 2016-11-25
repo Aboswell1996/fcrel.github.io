@@ -176,6 +176,12 @@ color : #fff;
     visibility: visible;
 }
 
+.margin-topandbot-research{
+
+  margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .dropdown:hover .dropdown-menu { /*makes the drop down menu show when hovered*/
     display: block;
 
