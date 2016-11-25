@@ -718,6 +718,14 @@ h2.news a:hover{
   padding: 10px 50px 10px 10px;
 }
 
+.research-image{
+  mdisplay: inline-block;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  margin-top: 25px;
+
+}
+
 .partner-heading {
  mdisplay: inline-block;
  padding: 25px 25px 25px 25px;
